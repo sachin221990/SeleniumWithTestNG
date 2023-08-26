@@ -28,8 +28,8 @@ public class parallelTestingInTestNG {
     @AfterMethod
     public void closeBrowser() {
         // Close browser
-        //driver.close();
-        driver.quit();
+        driver.close();
+        //driver.quit();
     }
 
 }
