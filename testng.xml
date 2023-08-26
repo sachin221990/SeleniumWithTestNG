@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/sachin/IdeaProjects/SeleniumWithTestNG">
+        <classes><class name="Demo.Test1">
+            <methods>
+                <include name="method1"/>
+                <include name="method2"/>
+            </methods>
+        </class>
+            <class name="TestNGBasics.annotationsInTestNG">
+                <methods>
+                    <include name="method1"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.assertionInTestNG">
+                <methods><include name="login"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.dataProviderInTestNG">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.dependsOnMethod">
+                <methods>
+                    <include name="selectRoundTrip"/>
+                    <include name="selectModule"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.groopsInTestNG">
+                <methods>
+                    <include name="selectRoundTrip"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.parallelTestingInTestNG">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                </methods>
+            </class>
+            <class name="TestNGBasics.prioritiesInTestNG">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                    <include name="method3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
